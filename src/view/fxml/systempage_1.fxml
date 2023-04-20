@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemPageController">
+   <children>
+      <Label layoutX="14.0" layoutY="61.0" prefHeight="47.0" prefWidth="343.0" text="Currency Change System" textFill="#5341b9">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutbtn" layoutX="424.0" layoutY="78.0" mnemonicParsing="false" onAction="#LogoutButton" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #0f0be0;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="90.0" layoutY="195.0" prefHeight="24.0" prefWidth="79.0" text="USD" textFill="#cc0aee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="195.0" prefHeight="24.0" prefWidth="79.0" text="NIS" textFill="#cd10a7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usdfield" layoutX="51.0" layoutY="274.0" onAction="#usdf" prefHeight="38.0" prefWidth="156.0" />
+      <Label layoutX="267.0" layoutY="274.0" prefHeight="38.0" prefWidth="37.0" text="TO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nisfeild" layoutX="367.0" layoutY="274.0" onAction="#nisTextfield" prefHeight="38.0" prefWidth="162.0" />
+      <Button fx:id="convertbtn" layoutX="96.0" layoutY="373.0" mnemonicParsing="false" onAction="#convertButton" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #0f0be0;" text="Convert" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
